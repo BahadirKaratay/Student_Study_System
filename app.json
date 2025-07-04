@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "basari-takip",
+    "name": "Başarı Takip - LGS Hazırlık",
     "slug": "basari-takip",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,20 +10,45 @@
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#1e3c72"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.student.basaritakip",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#3b82f6"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.student.basaritakip",
+      "versionCode": 1,
+      "permissions": [
+        "VIBRATE",
+        "WAKE_LOCK",
+        "VIBRATE",
+        "WAKE_LOCK"
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "396c1200-be29-4765-8391-6d62b5b7d031"
+      }
+    },
+    "owner": "rexwert",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/396c1200-be29-4765-8391-6d62b5b7d031"
     }
   }
 }
