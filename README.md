@@ -1,73 +1,73 @@
-# LGS Öğrenci Takip Sistemi
+# LGS Student Tracking System
 
-## 📱 Uygulama Hakkında
+## 📱 About the Application
 
-Bu uygulama, LGS (Liselere Geçiş Sınavı) hazırlığı yapan öğrenciler için geliştirilmiş bir takip sistemidir. Öğrenciler deneme sınavlarındaki performanslarını takip edebilir, net hesaplamaları yapabilir ve gelişimlerini gözlemleyebilirler.
+This application is developed for students preparing for LGS (High School Entrance Exam) in Turkey. Students can track their mock exam performances, calculate net scores, and monitor their progress.
 
-## 🚀 Uygulamayı Çalıştırma
+## 🚀 Running the Application
 
-### Gereksinimler
-- Node.js (v14 veya üzeri)
+### Requirements
+- Node.js (v14 or higher)
 - Expo CLI
-- Android/iOS cihaz veya Expo Go uygulaması
+- Android/iOS device or Expo Go app
 
-### Development Modunda Çalıştırma
+### Running in Development Mode
 
-1. **Proje klasörüne gidin:**
+1. **Navigate to project folder:**
 ```bash
 cd Ogrenci-Takip
 ```
 
-2. **Bağımlılıkları yükleyin:**
+2. **Install dependencies:**
 ```bash
 npm install
 ```
 
-3. **Development server'ı başlatın:**
+3. **Start development server:**
 ```bash
 npx expo start
 ```
 
-4. **QR kod ile telefonda test edin:**
-   - Expo Go uygulamasını indirin
-   - Terminal'da çıkan QR kodu Expo Go ile tarayın
+4. **Test on phone with QR code:**
+   - Download Expo Go app
+   - Scan the QR code from terminal with Expo Go
 
-## 📱 Expo Go ile Kullanım
+## 📱 Using Expo Go
 
-### Expo Go Nedir?
-Expo Go, React Native uygulamalarını test etmek için kullanılan resmi Expo uygulamasıdır. App Store veya Play Store'dan ücretsiz indirilebilir.
+### What is Expo Go?
+Expo Go is the official Expo app used to test React Native applications. It can be downloaded for free from App Store or Play Store.
 
-### Adım Adım Kullanım:
+### Step-by-Step Usage:
 
-1. **Expo Go'yu indirin:**
-   - **Android:** [Play Store'dan Expo Go](https://play.google.com/store/apps/details?id=host.exp.exponent)
-   - **iOS:** [App Store'dan Expo Go](https://apps.apple.com/app/expo-go/id982107779)
+1. **Download Expo Go:**
+   - **Android:** [Expo Go from Play Store](https://play.google.com/store/apps/details?id=host.exp.exponent)
+   - **iOS:** [Expo Go from App Store](https://apps.apple.com/app/expo-go/id982107779)
 
-2. **Uygulamayı açın:**
-   - Expo Go uygulamasını telefonda açın
-   - "Scan QR Code" butonuna basın
+2. **Open the app:**
+   - Open Expo Go app on your phone
+   - Tap "Scan QR Code" button
 
-3. **QR kodu tarayın:**
-   - Geliştirici `npx expo start` komutunu çalıştırdığında terminal'da QR kod çıkar
-   - Bu QR kodu Expo Go ile tarayın
-   - Uygulama otomatik olarak yüklenip açılacak
+3. **Scan QR code:**
+   - When developer runs `npx expo start`, a QR code appears in terminal
+   - Scan this QR code with Expo Go
+   - The app will automatically load and open
 
-### ⚠️ Önemli Notlar:
-- QR kodu taradığınızda web sitesine yönlendiriliyorsa, development server çalışmıyor demektir
-- Aynı WiFi ağında olmanız gerekmez (tunnel mode ile)
-- Uygulama güncellendiğinde otomatik olarak yenilenir
+### ⚠️ Important Notes:
+- If QR code redirects to website, development server is not running
+- You don't need to be on the same WiFi network (with tunnel mode)
+- App updates automatically when changes are made
 
-## 🌐 Web Versiyonu
+## 🌐 Web Version
 
-Uygulama aynı zamanda web tarayıcısında da çalışır:
-- **Canlı Link:** [https://gilded-medovik-cccedc.netlify.app/](https://gilded-medovik-cccedc.netlify.app/)
-- Web versiyonu mobil responsive tasarıma sahiptir
+The application also works in web browsers:
+- **Live Link:** [https://gilded-medovik-cccedc.netlify.app/](https://gilded-medovik-cccedc.netlify.app/)
+- Web version has mobile responsive design
 
-## 🔧 Build ve Deploy
+## 🔧 Build and Deploy
 
 ### Production Build (APK)
 ```bash
-# EAS CLI kurulumu
+# Install EAS CLI
 npm install -g eas-cli
 
 # Login
@@ -79,31 +79,31 @@ eas build --platform android --profile preview
 
 ### Web Build
 ```bash
-# Web için build
+# Build for web
 npx expo build:web
 
-# Netlify'e deploy
-# Build klasörünü Netlify'e sürükle-bırak
+# Deploy to Netlify
+# Drag and drop build folder to Netlify
 ```
 
 ### EAS Update (OTA Updates)
 ```bash
-# Update konfigürasyonu
+# Update configuration
 eas update:configure
 
-# Production branch'e update
+# Update to production branch
 eas update --branch production
 ```
 
-## 📋 Uygulama Özellikleri
+## 📋 Application Features
 
-- **Net Hesaplama:** Doğru/yanlış cevap sayılarından net hesaplama
-- **Ders Bazlı Takip:** Türkçe, Matematik, Fen, Sosyal, İngilizce
-- **İstatistikler:** Performans grafikleri ve analizi
-- **Sınav Geçmişi:** Önceki sınavların kayıtları
-- **Responsive Tasarım:** Hem mobil hem web uyumlu
+- **Net Score Calculation:** Calculate net scores from correct/incorrect answers
+- **Subject-Based Tracking:** Turkish, Mathematics, Science, Social Studies, English
+- **Statistics:** Performance charts and analysis
+- **Exam History:** Records of previous exams
+- **Responsive Design:** Compatible with both mobile and web
 
-## 🛠️ Teknolojiler
+## 🛠️ Technologies
 
 - **Frontend:** React Native / Expo
 - **Styling:** React Native StyleSheet / Tailwind (web)
@@ -112,40 +112,44 @@ eas update --branch production
 - **Build Tool:** EAS Build
 - **Deployment:** Netlify (web), EAS (mobile)
 
-## 📱 Desteklenen Platformlar
+## 📱 Supported Platforms
 
-- **iOS:** iPhone ve iPad
+- **iOS:** iPhone and iPad
 - **Android:** Android 6.0+
-- **Web:** Modern tarayıcılar (Chrome, Firefox, Safari, Edge)
+- **Web:** Modern browsers (Chrome, Firefox, Safari, Edge)
 
-## 👨‍🏫 Eğitmenler İçin
+## 👨‍🏫 For Instructors
 
-Eğer bu uygulamayı test etmek istiyorsanız:
+If you want to test this application:
 
-1. **En Kolay Yöntem:** Expo Go indirip QR kod tarayın
-2. **Alternatif:** Web versiyonunu tarayıcıda açın
-3. **APK İstenirse:** Geliştirici size APK dosyası gönderebilir
+1. **Easiest Method:** Download Expo Go and scan QR code
+2. **Alternative:** Open web version in browser
+3. **If APK needed:** Developer can send you APK file
 
-## 🐛 Sorun Giderme
+## 🐛 Troubleshooting
 
-### Uygulama açılıp kapanıyorsa:
-- Development modda çalıştırıp console loglarını kontrol edin
-- `npx expo start` ile terminal'da hataları görün
+### If app opens and crashes:
+- Run in development mode and check console logs
+- See errors in terminal with `npx expo start`
 
-### QR kod web sitesine yönlendiriyorsa:
-- Development server'ın çalıştığından emin olun
-- `npx expo start --tunnel` komutunu deneyin
+### If QR code redirects to website:
+- Make sure development server is running
+- Try `npx expo start --tunnel` command
 
-### Build hataları:
-- `npm install` ile bağımlılıkları yeniden yükleyin
-- Node.js versiyonunu kontrol edin
+### Build errors:
+- Reinstall dependencies with `npm install`
+- Check Node.js version
 
-## 📞 İletişim
+## 📄 License
 
-Herhangi bir sorun veya öneri için lütfen iletişime geçin.
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](http://creativecommons.org/licenses/by-nc/4.0/).
+
+© 2025 Bahadır Karatay
+
+## 📞 Contact
+
+Please contact for any issues or suggestions.
 
 ---
 
-📄 License
-This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
-© 2025 Bahadır Karatay
+**Note:** This project is developed for educational purposes.
